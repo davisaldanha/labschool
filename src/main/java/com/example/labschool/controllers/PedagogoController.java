@@ -71,7 +71,7 @@ public class PedagogoController {
     public ResponseEntity<Object> deletePedagogo(@PathVariable(value="id") UUID id){
         Optional<PedagogoModel> pedagogoO = pedagogoRepository.findById(id);
         if(pedagogoO.isEmpty()){
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Pedagogo not found.");
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Pedagogo não encontrado!.");
         }
         
         pedagogoRepository.deleteById(id);
