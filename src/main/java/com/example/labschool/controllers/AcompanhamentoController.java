@@ -26,7 +26,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class AcompanhamentoController {
     
     @Autowired
-    private AcompanhamentoRepository acompanhamentoRepository
+    private AcompanhamentoRepository acompanhamentoRepository;
     
    @PostMapping("acompanhamento")
    public ResponseEntity<AcompanhamentoPedagogicoModel> saveAcompanhamento(@RequestBody @Valid AcompanhamentoDto acompanhamentoDto){
