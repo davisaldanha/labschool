@@ -52,3 +52,35 @@
 [34mINFO [0;39m 20-09-2023 - 21:25:36.889 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 [34mINFO [0;39m 20-09-2023 - 21:25:36.890 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
 [34mINFO [0;39m 20-09-2023 - 21:25:37.549 [http-nio-8080-exec-1] c.e.l.controllers.PedagogoController - Pedagogo não foi identificado.
+[34mINFO [0;39m 20-09-2023 - 21:29:36.141 [http-nio-8080-exec-5] c.e.l.controllers.PedagogoController - Pedagogo não foi identificado.
+[34mINFO [0;39m 20-09-2023 - 21:31:27.321 [http-nio-8080-exec-8] c.e.l.controllers.PedagogoController - Consulta Pedagogo concluída
+[34mINFO [0;39m 20-09-2023 - 21:34:16.836 [main] c.e.labschool.LabschoolApplication - Starting LabschoolApplication using Java 17.0.2 with PID 19924 (C:\Users\ok\Documents\LAB365\labschool\target\classes started by ok in C:\Users\ok\Documents\LAB365\labschool)
+[34mINFO [0;39m 20-09-2023 - 21:34:16.841 [main] c.e.labschool.LabschoolApplication - No active profile set, falling back to 1 default profile: "default"
+[34mINFO [0;39m 20-09-2023 - 21:34:19.877 [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[34mINFO [0;39m 20-09-2023 - 21:34:20.278 [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 357 ms. Found 3 JPA repository interfaces.
+[34mINFO [0;39m 20-09-2023 - 21:34:22.953 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[34mINFO [0;39m 20-09-2023 - 21:34:22.987 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[34mINFO [0;39m 20-09-2023 - 21:34:22.988 [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
+[34mINFO [0;39m 20-09-2023 - 21:34:23.420 [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[34mINFO [0;39m 20-09-2023 - 21:34:23.421 [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6366 ms
+[34mINFO [0;39m 20-09-2023 - 21:34:24.012 [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[34mINFO [0;39m 20-09-2023 - 21:34:24.247 [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.7.Final
+[34mINFO [0;39m 20-09-2023 - 21:34:24.255 [main] org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+[34mINFO [0;39m 20-09-2023 - 21:34:24.869 [main] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+[34mINFO [0;39m 20-09-2023 - 21:34:25.406 [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+[34mINFO [0;39m 20-09-2023 - 21:34:25.475 [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[34mINFO [0;39m 20-09-2023 - 21:34:28.039 [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3dc39459
+[34mINFO [0;39m 20-09-2023 - 21:34:28.043 [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[34mINFO [0;39m 20-09-2023 - 21:34:29.398 [main] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+[34mINFO [0;39m 20-09-2023 - 21:34:32.009 [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[34mINFO [0;39m 20-09-2023 - 21:34:34.398 [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[34mINFO [0;39m 20-09-2023 - 21:34:35.071 [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+[31mWARN [0;39m 20-09-2023 - 21:34:38.607 [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[34mINFO [0;39m 20-09-2023 - 21:34:40.503 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[34mINFO [0;39m 20-09-2023 - 21:34:40.566 [main] c.e.labschool.LabschoolApplication - Started LabschoolApplication in 25.519 seconds (process running for 27.183)
+[34mINFO [0;39m 20-09-2023 - 21:34:40.588 [main] c.e.labschool.LabschoolApplication - API INICIADA COM SUCESSO.
+[34mINFO [0;39m 20-09-2023 - 21:35:00.904 [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[34mINFO [0;39m 20-09-2023 - 21:35:00.905 [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[34mINFO [0;39m 20-09-2023 - 21:35:00.906 [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[34mINFO [0;39m 20-09-2023 - 21:35:00.948 [http-nio-8080-exec-3] c.e.l.controllers.PedagogoController - Listagem Pedagogos Concluída.
+[34mINFO [0;39m 20-09-2023 - 21:35:32.089 [http-nio-8080-exec-4] c.e.l.controllers.PedagogoController - Instância Pedagogo cadastrada: Alexandre

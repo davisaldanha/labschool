@@ -37,11 +37,13 @@ public class PedagogoController {
         var pedagogoModel = new PedagogoModel();
         
         BeanUtils.copyProperties(pedagogoDto, pedagogoModel); 
+        LOGGER.info("Instância Pedagogo cadastrada: " + pedagogoDto.nome());
         return ResponseEntity.status(HttpStatus.CREATED).body(pedagogoRepository.save(pedagogoModel));
     }
     
     @GetMapping("pedagogos")
     public ResponseEntity<List<PedagogoDto>> getAllPedagogos(){
+        LOGGER.info("Listagem Pedagogos Concluída.");
         return ResponseEntity.status(HttpStatus.OK).body(pedagogoRepository.findAll()
                 .stream().map(PedagogoDto::new).toList());
     }
