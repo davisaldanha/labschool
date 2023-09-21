@@ -14,7 +14,6 @@ public class LabschoolApplication {
                 LOGGER.info("INICIANDO API LABSCHOOL...");          
 		SpringApplication.run(LabschoolApplication.class, args);
                 LOGGER.info("API INICIADA COM SUCESSO.");
-                LOGGER.debug("Log Debug");
 	}
 
 }

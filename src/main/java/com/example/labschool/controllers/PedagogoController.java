@@ -8,6 +8,8 @@ import jakarta.validation.Valid;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -28,6 +30,8 @@ public class PedagogoController {
     @Autowired
     private PedagogoRepository pedagogoRepository;
     
+    private static Logger LOGGER = LoggerFactory.getLogger(PedagogoController.class);
+    
     @PostMapping("pedagogo")
     public ResponseEntity<PedagogoModel> savePedagogo(@RequestBody @Valid PedagogoDto pedagogoDto){
         var pedagogoModel = new PedagogoModel();
@@ -47,11 +51,13 @@ public class PedagogoController {
         Optional<PedagogoModel> pedagogoO = pedagogoRepository.findById(id);
         
         if(pedagogoO.isEmpty()){
+            LOGGER.info("Pedagogo não foi identificado.");
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Pedagogo not found.");
         }
         
         Optional<PedagogoDto> pedagogoDto = pedagogoO.map(PedagogoDto::new);
-        return ResponseEntity.status(HttpStatus.OK).body(pedagogoDto.get());   
+        LOGGER.info("Consulta Pedagogo concluída");
+        return ResponseEntity.status(HttpStatus.OK).body(pedagogoDto.get());  
     }
     
     @PutMapping("pedagogo/{id}")
