@@ -84,3 +84,34 @@
 [34mINFO [0;39m 20-09-2023 - 21:35:00.906 [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
 [34mINFO [0;39m 20-09-2023 - 21:35:00.948 [http-nio-8080-exec-3] c.e.l.controllers.PedagogoController - Listagem Pedagogos Concluída.
 [34mINFO [0;39m 20-09-2023 - 21:35:32.089 [http-nio-8080-exec-4] c.e.l.controllers.PedagogoController - Instância Pedagogo cadastrada: Alexandre
+[34mINFO [0;39m 21-09-2023 - 19:53:13.541 [main] c.e.labschool.LabschoolApplication - Starting LabschoolApplication using Java 17.0.2 with PID 21512 (C:\Users\ok\Documents\LAB365\labschool\target\classes started by ok in C:\Users\ok\Documents\LAB365\labschool)
+[34mINFO [0;39m 21-09-2023 - 19:53:13.548 [main] c.e.labschool.LabschoolApplication - No active profile set, falling back to 1 default profile: "default"
+[34mINFO [0;39m 21-09-2023 - 19:53:19.519 [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[34mINFO [0;39m 21-09-2023 - 19:53:20.118 [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 537 ms. Found 3 JPA repository interfaces.
+[34mINFO [0;39m 21-09-2023 - 19:53:25.370 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[34mINFO [0;39m 21-09-2023 - 19:53:25.435 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[34mINFO [0;39m 21-09-2023 - 19:53:25.437 [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
+[34mINFO [0;39m 21-09-2023 - 19:53:26.336 [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[34mINFO [0;39m 21-09-2023 - 19:53:26.338 [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 12466 ms
+[34mINFO [0;39m 21-09-2023 - 19:53:27.991 [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[34mINFO [0;39m 21-09-2023 - 19:53:28.418 [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.7.Final
+[34mINFO [0;39m 21-09-2023 - 19:53:28.425 [main] org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+[34mINFO [0;39m 21-09-2023 - 19:53:29.372 [main] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+[34mINFO [0;39m 21-09-2023 - 19:53:30.007 [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+[34mINFO [0;39m 21-09-2023 - 19:53:30.079 [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[34mINFO [0;39m 21-09-2023 - 19:53:34.191 [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5abf6a99
+[34mINFO [0;39m 21-09-2023 - 19:53:34.199 [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[34mINFO [0;39m 21-09-2023 - 19:53:36.487 [main] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+[34mINFO [0;39m 21-09-2023 - 19:53:42.661 [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[34mINFO [0;39m 21-09-2023 - 19:53:45.188 [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[34mINFO [0;39m 21-09-2023 - 19:53:46.851 [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+[31mWARN [0;39m 21-09-2023 - 19:53:49.875 [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[34mINFO [0;39m 21-09-2023 - 19:53:51.085 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[34mINFO [0;39m 21-09-2023 - 19:53:51.122 [main] c.e.labschool.LabschoolApplication - Started LabschoolApplication in 40.641 seconds (process running for 43.486)
+[34mINFO [0;39m 21-09-2023 - 19:53:51.130 [main] c.e.labschool.LabschoolApplication - API INICIADA COM SUCESSO.
+[34mINFO [0;39m 21-09-2023 - 19:56:30.671 [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[34mINFO [0;39m 21-09-2023 - 19:56:30.671 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[34mINFO [0;39m 21-09-2023 - 19:56:30.674 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+[31mWARN [0;39m 21-09-2023 - 19:56:30.740 [http-nio-8080-exec-1] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+[34mINFO [0;39m 21-09-2023 - 19:59:55.713 [http-nio-8080-exec-2] c.e.l.controllers.PedagogoController - Instância Pedagogo cadastrada: Joana
+[34mINFO [0;39m 21-09-2023 - 20:03:08.918 [http-nio-8080-exec-9] c.e.l.controllers.PedagogoController - Instância Pedagogo cadastrada: Joana
