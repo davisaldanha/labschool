@@ -67,11 +67,13 @@ public class PedagogoController {
                                                      @RequestBody @Valid PedagogoDto pedagogoDto){
         Optional<PedagogoModel> pedagogoO = pedagogoRepository.findById(id);
         if(pedagogoO.isEmpty()){
+            LOGGER.info("ID [" + id + "] não identificado na base de dados" );
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Pedagogo not found.");
         }
         
        var pedagogoModel = pedagogoO.get();
        BeanUtils.copyProperties(pedagogoDto, pedagogoModel);
+       LOGGER.info("Usuário de ID["+id+"] atualizado na base de dados");
        return ResponseEntity.status(HttpStatus.OK).body(pedagogoRepository.save(pedagogoModel));
     }
 
@@ -79,10 +81,12 @@ public class PedagogoController {
     public ResponseEntity<Object> deletePedagogo(@PathVariable(value="id") UUID id){
         Optional<PedagogoModel> pedagogoO = pedagogoRepository.findById(id);
         if(pedagogoO.isEmpty()){
+            LOGGER.info("ID [" + id + "] não identificado na base de dados" );
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Pedagogo não encontrado!.");
         }
         
         pedagogoRepository.deleteById(id);
+        LOGGER.info("Usuário de ID["+id+"] excluído da base de dados");
         return ResponseEntity.status(HttpStatus.OK).body("Pedagogo deleted succesfully.");    
     }
 }
