@@ -74,7 +74,7 @@ public class PedagogoController {
         
        var pedagogoModel = pedagogoO.get();
        BeanUtils.copyProperties(pedagogoDto, pedagogoModel);
-       LOGGER.info("Usuário de ID["+id+"] atualizado na base de dados");
+       LOGGER.info("Pedagogo de ID["+id+"] atualizado na base de dados");
        return ResponseEntity.status(HttpStatus.OK).body(pedagogoRepository.save(pedagogoModel));
     }
 
@@ -87,7 +87,7 @@ public class PedagogoController {
         }
         
         pedagogoRepository.deleteById(id);
-        LOGGER.info("Usuário de ID["+id+"] excluído da base de dados");
+        LOGGER.info("Pedagogo de ID["+id+"] excluído da base de dados");
         return ResponseEntity.status(HttpStatus.OK).body("Pedagogo deleted succesfully.");    
     }
     
