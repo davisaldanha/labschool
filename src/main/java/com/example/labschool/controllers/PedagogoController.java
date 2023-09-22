@@ -2,6 +2,7 @@ package com.example.labschool.controllers;
 
 
 import com.example.labschool.Dtos.PedagogoDto;
+import com.example.labschool.Dtos.PedagogoSeletorDto;
 import com.example.labschool.models.PedagogoModel;
 import com.example.labschool.repositories.PedagogoRepository;
 import jakarta.validation.Valid;
@@ -88,5 +89,11 @@ public class PedagogoController {
         pedagogoRepository.deleteById(id);
         LOGGER.info("Usuário de ID["+id+"] excluído da base de dados");
         return ResponseEntity.status(HttpStatus.OK).body("Pedagogo deleted succesfully.");    
+    }
+    
+    @GetMapping("pedagogos/name")
+    public ResponseEntity<List<PedagogoSeletorDto>> getPedagogo(){
+        LOGGER.info("Listagem de Pedagogos por ID e NOME concluída");
+        return  ResponseEntity.status(HttpStatus.OK).body(pedagogoRepository.findByIdName());
     }
 }
